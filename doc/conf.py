@@ -27,6 +27,8 @@ html_theme = 'alabaster'
 # _________________________________
 # start of not auto-generated stuff
 
+from source import enable_hello_world # not necessary, but the same as in scikit-learn
+
 master_doc = 'index'
 
 extensions = [
@@ -38,12 +40,3 @@ sphinx_gallery_conf = {
      'gallery_dirs': 'auto_examples',  # path to where to save gallery generated output
      'parallel': 2,
 }
-
-
-def disable_plot_gallery_for_linkcheck(app):
-    if app.builder.name == "linkcheck":
-        sphinx_gallery_conf["plot_gallery"] = "False"
-
-
-def setup(app):
-    app.connect("builder-inited", disable_plot_gallery_for_linkcheck)
