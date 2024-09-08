@@ -11,7 +11,7 @@ install project:
 pip install -e .
 
 building sphinx_gallery:
-sphinx-build -b html doc build
+sphinx-build -b html doc build -j 1
 
 clean build docs:
 rm -rf build/ doc/auto_examples/ doc/sg_execution_times.rst
