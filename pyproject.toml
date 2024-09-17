@@ -6,6 +6,8 @@ build-backend = "hatchling.build"
 name = "source"
 version = "0.0"
 dependencies = [
+"matplotlib==3.9.2",
+"numpy==2.1.1",
 "Sphinx==8.0.2",
 "sphinx-gallery==0.17.0",
 "joblib==1.4.2",

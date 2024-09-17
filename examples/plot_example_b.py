@@ -6,4 +6,5 @@ Just an example not using enable_hello_world:
 """
 
 import time
-time.sleep(2)
+
+time.sleep(3)

@@ -8,13 +8,13 @@ The structure of example_project mimics a basic setup of a dynamically modifiabl
 ### notes:
 
 install project:
-pip install -e .
+`pip install -e .`
 
 building sphinx_gallery:
-sphinx-build -b html doc build -j 1
+`sphinx-build -b html doc doc/build -j 1`
 
 clean build docs:
-rm -rf build/ doc/auto_examples/ doc/sg_execution_times.rst
+`rm -rf doc/build/ doc/auto_examples/ doc/sg_execution_times.rst`
 
 link to PEP 562:
 https://peps.python.org/pep-0562/
